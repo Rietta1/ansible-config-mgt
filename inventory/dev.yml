@@ -9,4 +9,4 @@
 172.31.52.220 ansible_ssh_user='ec2-user' 
 
 [lb]
-172.31.55.183 ansible_ssh_user='ubuntu'
+172.31.55.183 ansible_ssh_user='ubuntu' 
