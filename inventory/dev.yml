@@ -1,12 +1,12 @@
 [nfs]
-172.31.63.45 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/devops KP.pem
+172.31.63.45 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/devopsKP.pem
 
 [webservers]
-172.31.56.44 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/devops KP.pem
-172.31.63.7 ansible_ssh_user='ec2-user'  ansible_ssh_private_key_file=/home/ubuntu/devops KP.pem
+172.31.56.44 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/devopsKP.pem
+172.31.63.7 ansible_ssh_user='ec2-user'  ansible_ssh_private_key_file=/home/ubuntu/devopsKP.pem
 
 [db]
-172.31.52.220 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/devops KP.pem
+172.31.52.220 ansible_ssh_user='ec2-user' ansible_ssh_private_key_file=/home/ubuntu/devopsKP.pem
 
 [lb]
-172.31.55.183 ansible_ssh_user='ubuntu' ansible_ssh_private_key_file=/home/ubuntu/devops KP.pem
+172.31.55.183 ansible_ssh_user='ubuntu' ansible_ssh_private_key_file=/home/ubuntu/devopsKP.pem
