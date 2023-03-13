@@ -6,11 +6,11 @@
       include_vars: "{{ item }}"
       with_first_found:
         - files:
-          - dev.yml
-          - stage.yml
-          - prod.yml
-          - uat.yml
-        paths:
-          - "{{ playbook_dir }}/../env_vars"
+            - uat.yml
+            - prod.yml
+            - stage.yml
+            - dev.yml
+          paths:
+            - "{{ playbook_dir }}/../env-vars"
       tags:
         - always
