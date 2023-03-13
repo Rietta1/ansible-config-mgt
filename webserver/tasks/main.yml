@@ -11,16 +11,26 @@
     name: "git"
     state: present
 
+- name: Create target directory if it does not exist
+  become: true
+  file:
+    path: /var/www/html
+    state: directory
+  become: yes
+
 - name: clone a repo
   become: true
   ansible.builtin.git:
-    repo: https://github.com/Rietta1/ansible-config-mgt.git
+    repo: https://github.com/Rietta1/DevopsToolsWebsite.git
     dest: /var/www/html
     force: yes
 
-- name: copy html content to one level up
+- name: Copy HTML content to one level up
   become: true
-  command: cp -r /var/www/html/html/ /var/www/
+  copy:
+    src: /var/www/html/html/
+    dest: /var/www/
+  become: yes
 
 - name: Start service httpd, if not started
   become: true
