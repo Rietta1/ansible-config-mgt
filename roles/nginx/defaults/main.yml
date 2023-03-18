@@ -82,7 +82,7 @@ nginx_upstreams:
      strategy: "ip_hash" # "least_conn", etc.
      keepalive: 16 # optional
      servers: {
-     "172.31.11.249 weight=3",
+     "172.31.2.290 weight=3",
      "172.31.15.12 weight=3",
      "proxy_pass http://myapp1"
    }
