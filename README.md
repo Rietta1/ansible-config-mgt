@@ -25,7 +25,7 @@ export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar
 source ~/.bash_profile
 
 
-##### Install  php
+##### Install  php.
 =====================================
 - yum module reset php -y
 - yum module enable php:remi-7.4 -y
