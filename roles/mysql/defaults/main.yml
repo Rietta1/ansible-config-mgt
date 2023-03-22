@@ -134,7 +134,7 @@ mysql_users:
 
 mysql_disable_log_bin: false
 
-# Replication settings (replication is only enabled if master/user have values).
+# Replication settings (replication is only enabled if master/user have values).-
 mysql_server_id: "1"
 mysql_max_binlog_size: "100M"
 mysql_binlog_format: "ROW"
